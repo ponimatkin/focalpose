@@ -84,7 +84,7 @@ python -m focalpose.scripts.run_single_image_inference --img path/to/image.jpg \
                                                        --topk 15 
 ```
 This will run the inference on an image with the class manually provided to the script. The pose will be refined for 15 
-iterations and the script will output top-15 model instances predicted by our instance retrieval pipeline. The ouput will consists
+iterations and the script will output top-15 model instances predicted by our instance retrieval pipeline. The ouput will consist
 of images with aligned meshes, and `.txt` files containing camera matrix and camera pose.
 
 ## Citation

@@ -1,0 +1,8 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Parametrization: Flat Plane">
+  <Param enum_val1="XZ" description="Projection plane" value="0" isxmlparam="0" enum_val0="XY" tooltip="Choose the projection plane" name="projectionPlane" type="RichEnum" enum_val2="YZ" enum_cardinality="3"/>
+  <Param description="Preserve Ratio" value="false" isxmlparam="0" tooltip="If checked the resulting parametrization will preserve the original apsect ratio of the model otherwise it will fill up the whole 0..1 uv space" name="aspectRatio" type="RichBool"/>
+  <Param description="Side Gutter" value="0" isxmlparam="0" tooltip="Leave an empty space around the parametrization area of the specified size (in texture space); accepted range [0.0 - 0.5]." name="sideGutter" type="RichFloat"/>
+ </filter>
+</FilterScript>

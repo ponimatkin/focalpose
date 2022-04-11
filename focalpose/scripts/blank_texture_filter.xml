@@ -1,0 +1,7 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+    <filter name="Set Texture">
+        <Param type="RichString" isxmlparam="0" description="Texture file" tooltip="If the file exists it will be associated to the mesh else a dummy one will be created"/>
+        <Param type="RichInt" isxmlparam="0" description="Texture Dimension (px)" tooltip="If the named texture doesn't exists the dummy one will be squared with this size" value="200" name="textDim"/>
+    </filter>
+</FilterScript>

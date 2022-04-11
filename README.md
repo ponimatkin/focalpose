@@ -6,8 +6,8 @@ FocalPose: Focal Length and Object Pose Estimation via Render and Compare
 <h3>
 <a href="http://ponimatkin.github.io">Georgy Ponimatkin</a>,
 <a href="http://ylabbe.github.io">Yann Labbé</a>,
+ <a href="http://bryanrussell.org">Bryan Russell</a>,
 <a href="http://imagine.enpc.fr/~aubrym/">Mathieu Aubry</a>,
-<a href="http://bryanrussell.org">Bryan Russell</a>,
 <a href="http://www.di.ens.fr/~josef/">Josef Sivic</a>
 <br>
 <br>

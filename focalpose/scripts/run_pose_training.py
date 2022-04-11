@@ -23,6 +23,8 @@ def make_cfg(args):
         N_CPUS = int(os.environ.get('SLURM_PROCID', 10))
     elif shutil.which('qstat'):
         N_CPUS = int(os.environ.get('MPI_LOCALRANKID', 10))
+    else:
+        N_CPUS = 8
     N_WORKERS = min(N_CPUS - 2, 8)
     N_WORKERS = 8
     N_RAND = np.random.randint(1e6)
@@ -317,6 +319,8 @@ def make_cfg(args):
         N_GPUS = int(os.environ.get('SLURM_NTASKS', 1))
     elif shutil.which('qstat'):
         N_GPUS = int(os.environ.get('PMI_SIZE', 1))
+    else:
+        N_GPUS = 1
     cfg.epoch_size = cfg.epoch_size // N_GPUS
     return cfg
 

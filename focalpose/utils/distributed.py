@@ -61,6 +61,10 @@ def init_distributed_mode(initfile=None):
     elif shutil.which('qstat'):
         rank = int(os.environ.get('PMI_RANK', 0))
         world_size = int(os.environ.get('PMI_SIZE', 1))
+    else:
+        rank = 0
+        world_size =  1
+
     if initfile is None:
         initfile = get_tmp_dir() / 'initfile'
         if initfile.exists() and world_size == 1:

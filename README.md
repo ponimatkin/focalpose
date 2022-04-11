@@ -63,7 +63,7 @@ refiner model on the Stanford Cars dataset with 10% of real-to-synth data ratio 
 ```
 python -m focalpose.scripts.run_pose_training --config stanfordcars3d-refine-huber-F10p
 ```
-We also provide an example submission scripts for [SLURM](train_slurm.sh) and [PBS](tran_pbs.sh) batch systems.
+We also provide an example submission scripts for [SLURM](train_slurm.sh) and [PBS](train_pbs.sh) batch systems.
 
 To evaluate the trained coarse and refiner models run (using provided checkpoints as an example):
 ```
